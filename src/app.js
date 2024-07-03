@@ -4,6 +4,11 @@ import { resolve } from "path"
 import cors from "cors"
 
 import './database'
+
+const corsOptions = {
+    origin: 'https://dev-burger-interface-iota.vercel.app',
+    credentials: true, 
+}
 class App{
     constructor(){
         this.app = express()
