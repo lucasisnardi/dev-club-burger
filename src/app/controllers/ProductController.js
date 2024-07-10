@@ -80,7 +80,7 @@ class ProductController {
         const product= await Product.findByPk(id)
 
         if(!product){
-            return response.status(401).js({erro: "Make sure your product ID is correct"})
+            return response.status(401).json({erro: "Make sure your product ID is correct"})
         }
 
         let path
